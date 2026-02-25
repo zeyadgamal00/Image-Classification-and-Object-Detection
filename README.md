@@ -1,5 +1,5 @@
-# 🚗 CompCars Vision App  
-### **Fine-Grained Car Classification & Object Recognition Web Application**  
+# 🔍 DetectaX
+### **Fine-Grained Object Classification & Object Recognition Web Application**  
 **“Upload. Detect. Classify. Explore.”**
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
@@ -9,27 +9,16 @@
 
 ---
 
-## 📸 Demo  
-> Replace the placeholders below with your actual screenshots or GIFs.
-
-![Demo GIF](path/to/demo.gif)  
-![Classification Screenshot](path/to/classification.png)  
-![Detection Screenshot](path/to/detection.png)
+**DetectaX** is a comprehensive computer vision platform designed for high-precision object detection, real-time tracking, and specialized vehicle analysis. By combining state-of-the-art deep learning architectures with a user-friendly **Streamlit web interface**, DetectaX provides a seamless "Detection-as-a-Service" experience for both general-purpose and industry-specific use cases.
 
 ---
 
-## 📘 About the Project
+## 🚀 Key Features
 
-The **CompCars Vision App** is a Streamlit-based web application built for performing **two powerful computer vision tasks**:
-
-1. **Fine-Grained Car Classification**  
-   Upload an image, and the model predicts **car make, model, and year** using a pretrained **ResNet50** architecture fine-tuned on the **CUHK-CompCars dataset**.
-
-2. **Object Recognition & Detection**  
-   The app uses **YOLO 12X**, a state-of-the-art object detection model, to identify and localize objects within an image, drawing bounding boxes with confidence scores.
-
-This project is designed for **researchers, automotive analytics teams, ML students**, and anyone working with vehicle datasets who needs a clean, fast, interactive interface.
-
+* **Unified Web Platform:** A dedicated [Streamlit interface](https://github.com/omaryasser3060/DEPI_Project_App-Streamlit-interface) for uploading images or videos and visualizing results directly in your browser.
+* **General Object Detection:** Real-time identification of 80+ object categories optimized for low-latency processing.
+* **Specialized Car Classification:** A fine-tuned Car Classification model designed to go beyond basic detection, classifying vehicles by make, model, or category with high accuracy.
+* **Multi-Object Tracking:** Maintain unique IDs for objects across video frames for consistent monitoring and counting.
 ---
 
 ## 🧰 Tech Stack
@@ -41,7 +30,7 @@ This project is designed for **researchers, automotive analytics teams, ML stude
 | **Computer Vision** | OpenCV |
 | **Core Python Libraries** | NumPy, Pandas, Pillow |
 | **Model Serving / Utils** | TensorFlow & PyTorch |
-| **Deployment** | Local machine or cloud (Streamlit Cloud, Azure, GCP, etc.) |
+| **Deployment** | Local machine or Azure |
 
 ---
 
@@ -59,8 +48,16 @@ This project is designed for **researchers, automotive analytics teams, ML stude
 - Detects multiple objects in an image  
 - Draws bounding boxes with labels & confidence  
 - Fast inference  
-- High-accuracy detection for real-world scenes  
+- High-accuracy detection for real-world scenes
 
+  
+### 💻 Technical Interface (Streamlit)
+
+The platform is powered by a Streamlit frontend, making advanced AI accessible without writing code:
+-  **Upload:** Drag and drop images or video files.
+-  **Toggle:** Switch between general object detection and specialized automotive classification.
+-  **Visualize:** Real-time bounding boxes, confidence scores, and class labels.
+-  **Export:** Download processed results and analytics.
 ---
 
 ## Model Details
@@ -278,10 +275,8 @@ This project is released under the MIT License.
 See the LICENSE file for details.
 
 ## Acknowledgements
-
+- DEPI (Digital Egypt Pioneers Initiative)
 - CUHK CompCars dataset.
 - Streamlit community.
 - YOLO open-source contributors.
 - ResNet authors.
-
-# ⭐ If you like this project, consider giving it a star on GitHub!
